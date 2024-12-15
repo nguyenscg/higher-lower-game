@@ -15,6 +15,14 @@ from art import logo
 # If user guesses correctly, it should +1 score and A becomes B or stays A if the choice was A
 # If user guesses wrong, game ends
 
+def compare(a_person, b_person):
+    if a_person > b_person:
+        print(a_person)
+        return a_person
+    else:
+        print(b_person)
+        return b_person
+
 # FIRST STEP: GET 2 RANDOM PEOPLE FROM GAME DATA
 first_person = random.choice(data)
 second_person = random.choice(data)
@@ -22,3 +30,7 @@ second_person = random.choice(data)
 # SECOND STEP: GET THEIR FOLLOWER COUNTS
 first_person_followers = first_person["follower_count"]
 second_person_followers = second_person["follower_count"]
+
+# THIRD STEP: COMPARE THEIR FOLLOWER COUNTS TO EACH OTHER, USE A FUNCTION
+print(f"{first_person} versus {second_person}")
+compare(first_person_followers, second_person_followers)
