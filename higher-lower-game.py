@@ -1,6 +1,9 @@
 # import random module to generate 2 random people from game-data
+import random
 # import game-data to use
+from game_data import data
 # import logo
+from art import logo
 
 # A vs B
 # logo here
