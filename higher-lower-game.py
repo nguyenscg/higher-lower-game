@@ -37,3 +37,6 @@ compare(first_person_followers, second_person_followers)
 
 # FOURTH STEP: Ask the user who has more followers? A or B
 guess = input("Who has more followers? A or B: ")
+
+# IF THE USER GUESSED CORRECTLY, +1 SCORE, OTHERWISE GAME ENDS (need a while loop eventually)
+score = 0
