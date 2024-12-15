@@ -18,5 +18,7 @@ from art import logo
 # FIRST STEP: GET 2 RANDOM PEOPLE FROM GAME DATA
 first_person = random.choice(data)
 second_person = random.choice(data)
-print(first_person)
-print(second_person)
+
+# SECOND STEP: GET THEIR FOLLOWER COUNTS
+first_person_followers = first_person["follower_count"]
+second_person_followers = second_person["follower_count"]
