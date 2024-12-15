@@ -5,8 +5,6 @@ from game_data import data
 # import logo
 from art import logo
 
-# Create a compare function to compare their followers to each other
-
 # A vs B
 # logo here
 # Compare A Structure: {name}, {description}, from {country}.
@@ -20,6 +18,7 @@ from art import logo
 # get 2 random people from game_data
 person1 = random.choice(data)
 person2 = random.choice(data)
-print(f"{person1}")
-print(f"{person2}")
 
+# get person1's follower_count and get person2's follower_count
+print(person1["follower_count"])
+print(person2["follower_count"])
