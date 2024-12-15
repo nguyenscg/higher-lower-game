@@ -34,3 +34,6 @@ second_person_followers = second_person["follower_count"]
 # THIRD STEP: COMPARE THEIR FOLLOWER COUNTS TO EACH OTHER, USE A FUNCTION
 print(f"{first_person} versus {second_person}")
 compare(first_person_followers, second_person_followers)
+
+# FOURTH STEP: Ask the user who has more followers? A or B
+guess = input("Who has more followers? A or B: ")
