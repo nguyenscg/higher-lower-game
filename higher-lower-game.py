@@ -33,6 +33,7 @@ game_over = False
 score = 0
 
 while not game_over:
+    print(logo)
     # FIRST STEP: GET 2 RANDOM PEOPLE FROM GAME DATA
     first_person = random.choice(data)
     second_person = random.choice(data)
