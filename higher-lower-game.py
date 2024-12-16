@@ -42,7 +42,9 @@ while not game_over:
     second_person_followers = second_person["follower_count"]
 
     # THIRD STEP: COMPARE THEIR FOLLOWER COUNTS TO EACH OTHER, USE A FUNCTION
-    print(f"{format_data(first_person)} versus {format_data(second_person)}")
+    print(f"{format_data(first_person)}")
+    print(vs)
+    print(f"{format_data(second_person)}")
 
     # FOURTH STEP: Ask the user who has more followers? A or B
     guess = input("Who has more followers? A or B: ").lower()
