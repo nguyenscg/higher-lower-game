@@ -30,13 +30,13 @@ def compare(user_guess, a_person, b_person):
         return user_guess == "b"
 
 # when the while loop starts, it will start with these, but if the while loop keeps running, it won't look at it again
+print(logo)
 game_over = False
 score = 0
 
 second_person = random.choice(data)
 
 while not game_over:
-    print(logo)
     # FIRST STEP: GET 2 RANDOM PEOPLE FROM GAME DATA
     # make the 2nd person become the next account at 1st person's
     first_person = second_person
@@ -55,6 +55,8 @@ while not game_over:
 
     # FOURTH STEP: Ask the user who has more followers? A or B
     guess = input("Who has more followers? A or B: ").lower()
+    print("\n" * 20)
+    print(logo)
 
     # Need to see if the user guess correctly
     is_correct = compare(guess, first_person_followers, second_person_followers)
